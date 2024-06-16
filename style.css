@@ -1,0 +1,1149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border:none;
+  outline:none;
+  scroll-behavior: smooth;
+  font-family: 'Nunito', sans-serif;
+}
+
+:root{
+  --bg-color:#191f36;
+   --snd-bf-color:#262B40;
+   --main-color:#59B2F4;
+   --text-color:#fff;
+   --background:#212121;
+   --primaryFont: "Poppins", sans-serif;
+}
+
+html{
+  font-size:62.5%;
+  overflow-x: hidden;
+
+}
+
+body{
+  background: var(--background);
+  color:var(--text-color);
+}
+
+section{
+  min-height:100vh;
+  padding:10rem 9% 2rem;
+
+}
+
+
+
+/*....................................................header section.....................................................*/
+
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:2rem 9%;
+  background: var(--background);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+}
+
+.logo{
+  font-size:2.5rem;
+  color:#8913d8;
+  font-weight: 700;
+  cursor: default;
+
+}
+
+.navbar a{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  padding:.5rem 1rem;
+  font-weight: 600;
+  border:2px solid transparent;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover
+{
+  color:var(--main-color);
+  border-top-color: #ca8a04;
+  border-bottom-color: #ca8a04;
+
+}
+
+.navbar .active{
+  color:var(--main-color);
+}
+
+
+
+#menu-icon{
+  font-size:3.6rem;
+  color:var(--text-color);
+  display:none;
+}
+
+
+/*.............................................................homr section...........................................*/
+
+
+.home{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content{
+  font-size:3.5rem;
+  font-weight:700;
+}
+
+.home-content h3:nth-of-type(2){
+  margin-bottom: 2rem;
+
+}
+
+span{
+ color:var(--main-color);
+}
+
+.home-content h1{
+  font-size:5.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.home-img img{
+ width:25vw;
+  border-radius: 50%;
+  
+  
+}
+
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform:translateY(-2.4rem);
+  }
+  100%{
+     transform: translateY(0);
+  }
+  
+}
+
+.home-content p{
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+
+
+.social-media a{
+    display:inline-flex;
+     justify-content: center;
+     align-items: center;
+     width:4rem;
+     height:4rem;
+     margin:3rem 1.5rem 3rem 0;
+     transition: .5s ease;
+}
+
+.social-media a:hover{
+  transform: scale(1.15);
+}
+
+.btn{
+  display:inline-block;
+  padding:1rem 2.8rem;
+  background:#E9AD35;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size:1.6rem;
+  color:black;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+
+.btn:hover{
+  box-shadow: none;
+}
+
+
+
+/*..................................................................about section.........................................................*/
+
+
+.aboutme{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+   gap :8rem;
+   background: var(--background);
+ }
+
+ .about-img img{
+  width:380px;
+  
+ }
+
+ .about-text h2{
+
+  font-size:5.6rem;
+  font-weight: 700;
+  color:#E9AD35;
+ }
+
+ .about-text h5{
+
+  line-height:1.2;
+  font-size:2.6rem;
+  font-weight: 700;
+ }
+
+ .about-text p{
+    font-size: 2rem;
+    line-height: 1.3;
+    margin:3rem 0 3rem;
+ }
+
+
+ /*......................................................education section.................................................*/
+
+.education-section{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   gap :8rem;
+   background: var(--background);
+   margin-top: 10rem;
+}
+
+.educaion-box{
+    width: 100%;
+    flex: 0.65 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 7%;
+}
+.education-box h1{
+    font-size: 5.5rem;
+    font-family: var(--primaryFont); 
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color:#E9AD35;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 700px;
+    height: 140px;
+    padding: 1.5rem;
+    background:#574a30  ;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    
+    gap:1rem;
+}
+
+.card:hover{
+  background: #d8a746;
+}
+
+.education-card-img{
+   border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    
+}
+
+.education-card-img img{
+  background: #E9AD35;
+  color:#fff;
+  width:50px;
+  border-radius: 100%;
+}
+
+.education-card-details{
+     display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    width: 100%;
+}
+
+
+.education-card-details h6{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color:#46d86a;
+}
+
+.education-card-details h4{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.education-card-details h5{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.education-img{
+  box-sizing: border-box;
+    padding: 1rem;
+    flex: 0.35 1;
+    margin-top: 1rem;
+    pointer-events: none;
+}
+
+.educatiom-img img{
+  width:100%;
+}
+
+
+
+/*  .....................SKILLS*.........................................*/
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 60vh;
+    padding: 8rem 2rem 2rem 2rem;
+    padding-top: 8rem;
+}
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.skillsHeader h2 {
+    font-family: Big Shoulders Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-align: center;
+    color:#E9AD35;
+}
+
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 0 2rem;
+}
+
+.skill--scroll {
+    width: 100%;
+    margin: 0 2rem;
+}
+
+
+.skill--box {
+    background:var(--background);
+    box-shadow: 0px 10px 20px #574a30 ;
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    transition: transform 300ms ease-in-out;
+   
+}
+
+
+.skill--box:hover  {
+    transform: scale(1.15);
+     
+    transition:none;
+}
+
+
+.skill--box > img {
+    height: 50px;
+    pointer-events: none;
+}
+
+
+.skill--box h3 {
+    font-family: Big Shoulders Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.marquee {
+    
+     display:flex;
+     flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+
+/*---------------------------------achievement section------------------------------------*/
+
+
+.achievement-section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem;
+  background: var(--background);
+  margin-top: 10rem;
+  gap:4rem;
+  
+}
+
+
+
+.achivement-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0.4;
+  width: 90%;
+  padding-left: 2rem;
+}
+
+.achievement-header h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color:#E9AD35;
+}
+
+.achievement-header h4 {
+  font-size: 1.75rem;
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+.achievement-crds{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 5%;
+  width: 100%;
+  flex: 0.6;
+}
+
+.achievement-card{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 170px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  transition: background-color 200ms ease-in-out;
+  width: 600px;
+  height:150px;
+  position: relative;
+  background: #5c481f;
+}
+
+.achievement-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 65%;
+}
+
+
+.achievement-details1 h2{
+
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.achievement-details1 p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.achievement-details2{
+        font-size:2rem;
+        font-weight:700;
+        color:#46d86a;
+
+}
+.achievement-img img{
+  width:100px;
+  height:70px;
+  border-radius: 1rem;
+}
+
+
+
+/* ----------------------------------------------service section--------------------------------------------------------*/
+
+
+.service-section{
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3.7rem;
+  margin-top: 10rem;
+}
+
+.service-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.service-header > h1 {
+  margin-bottom: 20px;
+  font-size: 6rem;
+  font-family: var(--primaryFont);
+  color: #E9AD35;
+}
+
+.service-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.service-container > p {
+  font-family: var(--primaryFont);
+  font-weight: 400;
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.service-box{
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #d8a746;
+  width:180px;
+  height:180px;
+  border-radius: 20px;
+}
+
+
+.service-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+  width: 100%;
+}
+
+.service-content >svg ,i{
+  width:40px;
+  height:40px;
+  box-sizing: border-box;
+  
+}
+.service-content>h4{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* .................................................................contact........................................... */
+
+.contact{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--background);
+
+}
+
+.contact h2{
+    align-self: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.contact-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap :8rem;
+  
+}
+
+.find{
+  display:flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap:4rem;
+
+ }
+
+.find-option{
+  display: inline-flex;
+  gap:2rem;
+}
+
+.find-option>svg{
+  width:20px;
+  height:20px;
+  
+}
+
+.findme{
+  max-width: 70rem;
+  margin:2rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  gap:4rem;
+  padding-left: 10rem;
+  
+
+}
+
+.findme > .social-media{
+    font-size: 4rem;
+
+}
+.find-option p{
+  font-size: 2rem;
+}
+
+.subheading{
+  font-size: 1rem;
+  color: #E9AD35;
+}
+
+.contact form{
+  max-width: 70rem;
+  margin:2rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form  .input-box input,
+.contact form textarea{
+  width:100%;
+  padding:1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: var(--snd-bf-color);
+  border-radius: .8rem;
+  margin:.7rem 0;
+}
+
+.contact form .input-box input{
+  width:49%;
+}
+
+.contact form textarea{
+  resize: none;
+}
+
+.contact form .subbtn{
+  
+    display:inline-block;
+    padding:1rem 2.8rem;
+    background:#E9AD35;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size:1.6rem;
+    color:black;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    margin-top: 2rem;
+  }
+  
+  .subbtn:hover{
+    box-shadow: none;
+  }
+
+
+
+/* ..........................................footer........................................... */
+
+
+
+.footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--snd-bf-color);
+}
+
+.footer-text{
+  font-size: 1.6rem;
+  
+}
+
+.footer-iconTop{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding:.8rem 1rem;
+  background: var(--main-color);
+  border-radius: .8rem;
+  transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i{
+  font-size: 2.4rem;
+  color:var(--snd-bf-color);
+}
+
+
+
+/* ....................................responsive............................................ */
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+   html{
+    font-size:55%;
+   }
+
+  .about-text > h2 {
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+}
+.about-text > p {
+    font-size: 1.15rem;
+}
+
+.about-img > img {
+    width: 300px;
+}
+
+  .service-section {
+      padding: 2.7rem;
+  }
+  .service-container > p {
+      width: 70%;
+  }
+}
+
+ 
+@media screen and(max-width:910px){
+  .navbar a{
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .logo{
+    font-size:1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  header{
+    padding: 2rem 3%;
+  }
+
+  section{
+    padding:10rem 3%;
+  }
+
+ 
+.aboutme {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-text {
+    flex: 0.6;
+    box-sizing: border-box;
+    /* padding: 5% 10%; */
+    padding: 20px;
+}
+
+.about-text > h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-text > p {
+    font-size: 1.1rem;
+}
+
+.about-img > img {
+    width: 250px;
+    flex: 0.4;
+}
+
+  .education-section {
+    min-height: 100%;
+}
+.education-img {
+    display: none;
+}
+.education-box {
+    flex: 1;
+    margin: auto;
+}    
+.education-box > h1{
+    font-size: 3.2rem;
+}
+.card {
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+  .service-section {
+      padding: 1.7rem;
+  }
+
+  .service-container > p {
+      font-size: 1.25rem;
+      width: 85%;
+      text-align: center;
+      margin-bottom: 4rem;
+  }
+
+  .service-box {
+      gap: 2.5rem;
+  }
+
+  .achievement-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2rem;
+  }
+
+.achievement-header{
+  width: 100%;
+ }
+
+ .achievement-header h1 {
+  font-size: 2.5rem;
+ }
+
+   
+ .achievement-cards {
+  margin-left: 0%;
+  padding: 1rem 0;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.achievement-card {
+  margin-left: 0px;
+  height: fit-content;
+}
+
+.achievement-content {
+  width: 70%;
+}
+
+.achievement-details1 {
+  margin-bottom: 20px;
+}
+
+.achievement-details1 h2 {
+  font-size: 1.15rem;
+}
+
+.achievement-details1 p {
+  font-size: 0.95rem;
+}
+
+.achievement-details2 {
+  width: 85%;
+  position: absolute;
+  bottom: 7px;
+  left: 25px;
+}
+
+.achievement-img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.achievement-img > img {
+  width: 80px;
+  height: 70px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  #menu-icon{
+      display:block;
+  }
+
+  .home{
+    flex-direction:column-reverse;
+  }
+
+  .navbar{
+    position:absolute;
+    top:100%;
+    left:05;
+    width:100%;
+    padding:1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0  .5rem 1rem rgb(0,0,0,.2);
+    display:none;
+
+  }
+
+  .navbar.active{
+    display:block;
+  }
+
+  .navbar a{
+    display:block;
+    font-size:2rem;
+    margin:3rem 0;
+  }
+
+
+  .home-content h3{
+    font-size: 2.6rem;
+  }
+
+  .home-content h1{
+    font-size:5rem;
+  }
+
+  .home-img img{
+    width:90vw;
+    margin-top:4rem;
+  }
+}
+
+@media screen and(max-width:800px) {
+
+  
+.about-text > h2 {
+    align-self: center;
+}
+
+  .education-box > h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    align-self: center;
+}
+.education-box {
+    padding: 1rem;
+}
+.card {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    height: 130px;
+}
+.education-card-img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.education-card-img > img {
+    width: 30px;
+}
+.education-card-details > h6 {
+    font-size: 0.85rem;
+    margin-bottom: 0.45rem;
+}
+
+.education-card-details > h4 {
+    font-size: 1.125rem;
+    line-height: 126%;
+}
+
+.education-card-details > h5 {
+    font-size: 1.05rem;
+    line-height: 126%;
+}
+
+
+  .service-section {
+      padding: 1rem;
+  }
+  .service-header h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+  }
+  .service-container > p {
+      font-size: 1.05rem;
+      width: 95%;
+      text-align: center;
+      margin-bottom: 3rem;
+  }
+
+  .service-box {
+      gap: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .about /*.line-styling .style-circle*/ {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.home-img img{
+  width:80vw;
+  margin-top:4rem;
+}
+
+.about-text > h2 {
+    font-size: 2.5rem;
+}
+
+.about-text > p {
+    font-size: 0.95rem;
+}
+
+.about-img > img {
+    width: 200px;
+}
+
+
+  .education-box > h1{
+    font-size: 2.5rem;
+}
+
+  .service-section {
+      padding: 0.5rem;
+  }
+  .service-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+  }
+  .service-container p{
+      width: 80%;
+  }
+  .service-box {
+      gap: 1rem;
+  }
+   
+  .achievement-section {
+    padding: 1rem;
+  }
+  .achievement-cards {
+    width: 100%;
+  }
+
+  .achievement-header h4 {
+    font-size: 1.5rem;
+}
+
+.achievement-details1 p {
+    font-size: 0.95rem;
+}
+.achievement-img > img {
+    width: 70px;
+    height: 60px;
+}
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+
+}
+

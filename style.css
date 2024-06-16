@@ -818,6 +818,31 @@ span{
 
 @media screen and (max-width: 992px) {
 
+
+    .footer{
+       margin-top:4rem;   
+    }
+
+  .contact{
+    margin-top:4rem;
+  }
+
+  .service-section{
+    margin-top:4rem;
+  }
+
+  .achievement-section{
+    margin-top:4rem;
+  }
+
+  .home{
+    margin-top:4rem;
+  }
+
+  #about{
+    margin-top:4rem;
+  }
+  
   header{
     padding: 2rem 3%;
   }

@@ -820,27 +820,27 @@ span{
 
 
     .footer{
-       margin-top:4rem;   
+       margin-top:2rem;   
     }
 
   .contact{
-    margin-top:4rem;
+    margin-top:2rem;
   }
 
   .service-section{
-    margin-top:4rem;
+    margin-top:2rem;
   }
 
   .achievement-section{
-    margin-top:4rem;
+    margin-top:2rem;
   }
 
   .home{
-    margin-top:4rem;
+    margin-top:2rem;
   }
 
   #about{
-    margin-top:4rem;
+    margin-top:2rem;
   }
   
   header{
@@ -1163,10 +1163,16 @@ span{
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 545px) {
 
+  .contact-box{
+    flex-direction:column;
+  }
+.marquee{
+   display:grid;
+    grid-template-columns: 1fr 1fr;
 }
-
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 
 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
 
